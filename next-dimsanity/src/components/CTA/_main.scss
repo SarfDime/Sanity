@@ -1,0 +1,54 @@
+.ctaSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1.5;
+    padding: 1rem;
+    background-color: var(--tpPri2);
+
+    @media (max-width: 500px) {
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+
+        div {
+            display: grid;
+            gap: .5rem;
+        }
+    }
+
+    div {
+        h1 {
+            font-size: clamp(2rem, 1.4706rem + 1.4118vw, 5rem);
+            color: var(--secColor);
+        }
+
+        p {
+            font-size: clamp(1.5rem, 1.1471rem + 0.9412vw, 3.5rem);
+            color: var(--tpSec);
+        }
+    }
+
+    a {
+        padding: .7rem;
+        font-size: clamp(1.5rem, 0.7059rem + 2.1176vw, 6rem);
+        font-weight: 600;
+        background-color: var(--paleAccentTwo);
+        color: #fff;
+        text-transform: lowercase;
+
+        @media (min-width: 600px) {
+            transition: color .3s ease, background-color .3s ease;
+
+            &:hover {
+                color: var(--accent);
+                background-color: var(--paleAccent);
+            }
+
+            &:active {
+                background-color: var(--tpPri2);
+            }
+        }
+    }
+}

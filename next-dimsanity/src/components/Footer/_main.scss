@@ -1,0 +1,60 @@
+footer {
+    padding: .5rem 1rem;
+    background-color: var(--tpPri3);
+
+    ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: space-between;
+
+        li {
+            font-size: 1.2rem;
+
+            &:first-child {
+                p {
+                    color: var(--tpSec);
+                }
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+
+                p {
+                    color: var(--accent);
+                }
+
+                svg {
+                    color: var(--paleAccentTwo);
+                }
+
+                @media (min-width: 600px) {
+
+                    svg,
+                    p {
+                        transition: color .3s ease;
+                    }
+
+                    &:hover {
+
+                        svg,
+                        p {
+                            color: var(--paleAccentThree);
+                        }
+                    }
+
+                    &:active {
+
+                        svg,
+                        p {
+                            color: var(--accent);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex-grow: .7;
+    background-color: var(--tpPri);
+    text-align: center;
+    gap: .5rem;
+
+    h1 {
+        font-size: 2.5rem;
+        font-size: clamp(2rem, 1.8235rem + 0.4706vw, 3rem);
+        color: var(--secColor);
+    }
+
+    p {
+        font-size: 1.7rem;
+        font-size: clamp(1.5rem, 1.1471rem + 0.9412vw, 3.5rem);
+        color: var(--tpSec);
+    }
+}

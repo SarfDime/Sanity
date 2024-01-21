@@ -1,0 +1,94 @@
+:root {
+    --priColor: rgb(233, 233, 233);
+    --tpPri: #fdfdfd;
+    --tpPri2: rgba(235, 235, 235);
+    --tpPri3: rgb(245, 245, 245);
+    --tpPri4: rgb(230, 230, 230);
+
+    --ddbkg: rgba(0, 0, 0, 0.3);
+
+    --boxShadow: rgba(0, 0, 0, 0.1) 0 .1rem .3rem 0, rgba(0, 0, 0, 0.06) 0 .1rem .2rem 0;
+
+    --secColor: rgba(0, 0, 0, 0.822);
+    --tpSec: hsl(0, 0%, 30%);
+    --tpSec2: hsl(0, 0%, 45%);
+    --tpSec3: hsl(0, 0%, 63%);
+    --tpSec4: hsl(0, 0%, 25%);
+
+    --accent: #ff3456;
+    --darkAccent: #9e001a;
+    --secAccent: #ff7300;
+    --paleSecAccent: rgba(255, 115, 0, 0.646);
+    --tertAccent: #ffa600;
+    --tertColor: rgb(187, 187, 187);
+    --tertColor2: rgb(207, 207, 207);
+    --paleAccent: #ff345633;
+    --paleAccentTwo: #ff3456ab;
+    --paleAccentThree: rgba(255, 52, 86, 0.521);
+    --someColor: #ffccbf;
+
+    --additionallAccent: #0084ff;
+    --paleAdAccent: #4485c2a9;
+    --paleAdAccent2: #5c9edb;
+
+    --reverseSecAccent: #00b953;
+    --reverseAccent: #00ffaa;
+    --reversePaleAccent: #00ffaa12;
+    --reversePaleAccentTwo: #00ffaaab;
+
+    --logoAccentOne: rgb(255, 52, 86);
+    --logoAccentTwo: rgb(255, 123, 0);
+    --logoReverseAccentOne: rgb(0, 185, 83);
+    --logoReverseAccentTwo: rgb(0, 255, 170);
+
+    --shadowColor: rgba(0, 0, 0, 0.2);
+    --shadowColorTwo: rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --priColor: rgb(0, 0, 0);
+        --tpPri: #141414;
+        --tpPri2: rgb(35, 35, 35);
+        --tpPri3: rgb(45, 45, 45);
+        --tpPri4: rgb(40, 40, 40);
+
+        --ddbkg: rgba(0, 0, 0, 0.103);
+
+        --secColor: rgb(255, 255, 255);
+        --tpSec: hsl(0, 0%, 92%);
+        --tpSec2: hsl(0, 0%, 73%);
+        --tpSec3: hsl(0, 0%, 47%);
+        --tpSec4: hsl(0, 0%, 37%);
+
+        --tertColor2: rgb(83, 83, 83);
+
+        --accent: #00ffaa;
+        --darkAccent: #007c53;
+        --secAccent: #00b953;
+        --tertAccent: #6dff41;
+
+        --someColor: rgb(0, 141, 94);
+        --paleSecAccent: rgba(0, 185, 83, 0.801);
+        --paleAccent: rgba(0, 255, 170, 0.092);
+        --paleAccentTwo: #08bb7f;
+        --paleAccentThree: rgba(0, 255, 170, 0.507);
+        --backdropBackground: rgb(1, 21, 50);
+
+        --reverseAccent: rgb(255, 52, 86);
+        --reverseSecAccent: #ff7300;
+        --reversePaleAccent: rgba(255, 52, 86, 0.072);
+        --reversePaleAccentTwo: rgba(255, 52, 86, 0.67);
+
+        --logoAccentOne: rgb(0, 185, 83);
+        --logoAccentTwo: rgb(0, 255, 170);
+        --logoReverseAccentOne: rgb(255, 52, 86);
+        --logoReverseAccentTwo: rgb(255, 123, 0);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+}

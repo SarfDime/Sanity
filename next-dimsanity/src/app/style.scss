@@ -1,0 +1,10 @@
+@use '../shared';
+@use '../components';
+
+.heroMain{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    // padding: .5rem;
+    gap: .5rem;
+}
