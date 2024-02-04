@@ -1,8 +1,8 @@
 import React from 'react'
-import Error from '@/components/Error/Error'
-import Project from '@/components/Project/Project'
-import { getProjects } from '@/utils/project-api'
-import NewProject from '@/components/Project/NewProject'
+import Error from '@/app/components/Error/Error'
+import Project from '@/app/components/Project/Project'
+import { getProjects } from '@/app/utils/project-api'
+import NewProject from '@/app/components/Project/NewProject'
 
 export default async function Projects() {
     try {

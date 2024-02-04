@@ -1,10 +1,14 @@
-import { IProject } from "@/components/Project/project-interface"
+import { IProject } from "@/app/components/Project/project-interface"
 
 const API_URL = `https://${process.env.NEXT_PUBLIC_PROJECT_API}.mockapi.io/project`
 type Project = IProject
 
 export const getProjects = async (): Promise<Project[]> => {
-    const response = await fetch(API_URL)
+    const response = await fetch(API_URL, {
+        next: {
+            revalidate: 0
+        }
+    })
     const data = await response.json()
     return data
 }

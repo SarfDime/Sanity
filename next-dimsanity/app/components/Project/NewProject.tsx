@@ -1,8 +1,10 @@
 "use client"
-import { createProject } from "@/utils/project-api"
+import { createProject } from "@/app/utils/project-api"
+import { useRouter } from "next/navigation"
 import React, { useEffect, useState } from "react"
 
 function NewProject() {
+    const router = useRouter()
     const [showForm, setShowForm] = useState(false)
     const [title, setTitle] = useState("")
     const [text, setText] = useState("")
@@ -29,6 +31,7 @@ function NewProject() {
                 setTitle('')
                 setResponse(updateResponse)
                 setShowResponse(true)
+                router.refresh()
             } catch (e) {
                 if (e instanceof Error) {
                     setResponse(e.message)
